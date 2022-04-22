@@ -18,9 +18,13 @@ public slots:
     void updateCounter();
 
 private:
+    void updateLED();
+
+private:
      int m_count;
      QTimer m_timer;
      Gpio m_gpio;
+     QLCDNumber* m_lcdout;
 
 };
 
